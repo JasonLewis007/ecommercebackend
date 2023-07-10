@@ -55,7 +55,7 @@ router.get('/:id', (req, res) => {
     res.status(500).json(err);
   })
 });
-/* 
+
 router.post('/', (req, res) => {
   // create a new category
   console.log(req.body.category_name);
@@ -67,15 +67,15 @@ router.post('/', (req, res) => {
     console.log(err);
     res.status(500).json(err);
   });
-}); */
+});
 
-router.post('/', (req, res) => {
+/* router.post('/', (req, res) => {
   console.log ('Why isnt this working')
   console.log(req.body);
   Category.create(req.body)
   .then((category) => res.status(200).json(category))
   .catch((err) => res.status(400).json(err));
-});
+}); */
 
 
 router.put('/:id', (req, res) => {
